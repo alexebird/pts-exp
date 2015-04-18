@@ -42,7 +42,7 @@
 (defn make-schema [json]
   (join "," (mark-type [] json)))
 
-
+(spit "schema3.json" (generate-string (mark-types raw-doc)))
 ;; (defn mark-type [json]
 ;;   (map
 ;;    (cond
